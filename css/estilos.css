@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: orange;
+    text-align: center;
+    color:#fff;
+    border-bottom:4px solid #090402;
+    padding: 1px;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+}
+
+.logo{
+    background-color: #d88e32;
+    width: 50px;
+    display: flex;
+    padding: 2px 10px 5px 5px;
+    margin: 5px 0 5px 10px;
+}
+
+.searchBar {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 10px 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.searchBar input {
+    width: 40%;
+}
+
