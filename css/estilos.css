@@ -1,57 +1,66 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-    display: flex;
-    background-color: orange;
-    justify-content: space-between;
-    color:#fff;
-    border-bottom:4px solid #090402;
-    width: 100%;
-    font-size: 25px;
+  display: flex;
+  background-color: orange;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 4px solid #090402;
+  width: 100%;
+  font-size: 25px;
 }
 
-.logo{
-    background-color: #d88e32;
-    width: 50px;
-    display: flex;
-    padding: 2px 10px 5px 5px;
-    margin: 5px 0 10px 0px;
+.logo {
+  background-color: #d88e32;
+  width: 50px;
+  display: flex;
+  padding: 2px 10px 5px 5px;
+  margin: 5px 0 10px 0px;
 }
 
 .searchBar {
-    display: flex;
-    padding: 10px 50px;
-    justify-content: center;
+  display: flex;
+  padding: 10px 50px;
+  justify-content: center;
 }
 
-.searchBar  input{
-    width: 100%;
-    border: 3px solid white;
-    border-right: none;
-    padding: 5px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #9DBFAF;
+.searchBar input {
+  width: 100%;
+  border: 3px solid white;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
 }
 
 .searchBar .iconSearch {
-    width: 40px;
-    height: 35px;
-    border: 1px solid white;
-    background: white;
-    text-align: center;
-    color: black;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
+  width: 40px;
+  height: 35px;
+  border: 1px solid white;
+  background: white;
+  text-align: center;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.cart span{
-    display: flex;
-    padding: 2px 10px 5px 5px;
-    margin: 12px 0 5px 0px;
+.cart span {
+  display: flex;
+  padding: 2px 10px 5px 5px;
+  margin: 12px 0 5px 0px;
 }
 
+.course-image {
+  width: 300px;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  padding: 250px;
+}
