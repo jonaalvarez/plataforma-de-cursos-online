@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.header-menu {
+.header {
   display: flex;
   background-color: orange;
   justify-content: space-between;
@@ -65,7 +65,6 @@
   padding: 250px;
 }
 
-<<<<<<< Updated upstream
 .badge:after {
     position: absolute;
     right: 0%;
@@ -82,8 +81,6 @@
     background: white;
     border-style: solid;
 }
-=======
 .payment-method-icon-container {
   width: 10px;
 }
->>>>>>> Stashed changes
