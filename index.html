@@ -13,12 +13,15 @@
         <p>Logo</p>
     </div>
     <form class="searchBar">
-        <input type="text" name="searchbar" placeholder="Buscar..">
+        <input list="listSearchBar" id="inputSearch" name="searchbar" placeholder="Buscar..">
+        <datalist id="listSearchBar" class="dataList">
+            <option value="Java"></option>
+        </datalist>
         <button type="submit" class="iconSearch"><i class="fa fa-search"></i></button>
     </form>
     <div class="cart">
         <span>
-            <i class="fa fa-shopping-cart"></i>
+            <i data-count="3" class="fa fa-shopping-cart badge"></i>
         </span>
     </div>
 </header>
