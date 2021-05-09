@@ -4,14 +4,13 @@
 }
 
 .header {
+    display: flex;
     background-color: orange;
-    text-align: center;
+    justify-content: space-between;
     color:#fff;
     border-bottom:4px solid #090402;
-    padding: 1px;
     width: 100%;
     font-size: 25px;
-    display: flex;
 }
 
 .logo{
@@ -23,16 +22,13 @@
 }
 
 .searchBar {
-    flex: 1;
     display: flex;
-    position: relative;
     padding: 10px 50px;
     justify-content: center;
-    text-align: center;
 }
 
 .searchBar input {
-    width: 40%;
+    width: 100%;
 }
 
 .cart span{
