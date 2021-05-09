@@ -68,7 +68,7 @@
 .badge:after {
     position: absolute;
     right: 0%;
-    top: 2%;
+    top: 1%;
     content: attr(data-count);
     font-size: 33%;
     padding: .6em;
