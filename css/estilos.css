@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  background-color: orange;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 4px solid #090402;
+  width: 100%;
+  font-size: 25px;
+}
+
+.logo {
+  background-color: #d88e32;
+  width: 50px;
+  display: flex;
+  padding: 2px 10px 5px 5px;
+  margin: 5px 0 10px 0px;
+}
+
+.searchBar {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: center;
+}
+
+.searchBar input {
+  width: 100%;
+  border: 3px solid white;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchBar .iconSearch {
+  width: 40px;
+  height: 35px;
+  border: 1px solid white;
+  background: white;
+  text-align: center;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cart span {
+  display: flex;
+  padding: 2px 10px 5px 5px;
+  margin: 12px 0 5px 0px;
+}
+
+.course-image {
+  width: 300px;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  padding: 250px;
+}
+
+.badge:after {
+    position: absolute;
+    right: 0%;
+    top: 1%;
+    content: attr(data-count);
+    font-size: 33%;
+    padding: .6em;
+    border-radius: 999px;
+    line-height: .75em;
+    color: #DF0000;
+    text-align: center;
+    min-width: 1em;
+    font-weight: bold;
+    background: white;
+    border-style: solid;
+}
+.payment-method-icon-container {
+  width: 10px;
+}
+
+footer{
+    min-height: 70px;
+    background-color:darkgray ;
+    color: beige;
+    border-top: 1px solid rgba(50, 50, 50, 0.3);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer div{
+    display: block;
+    border: 1px solid rgba(238, 234, 234, 0.986);
+    width: 400px;
+    height: 75px;
+
+}
+
+footer .footer-datos{
+    margin: auto;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+footer .footer-menu{
+    margin: auto;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+footer .footer-redes{
+    margin: auto;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}

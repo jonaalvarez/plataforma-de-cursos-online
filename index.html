@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coursite</title>
+    <title>Curso Acade</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Coursite</h1>
+<header>
+    <div class="logo">
+        <p>Logo</p>
+    </div>
+    <form class="searchBar">
+        <input list="listSearchBar" id="inputSearch" name="searchbar" placeholder="Buscar..">
+        <datalist id="listSearchBar" class="dataList">
+            <option value="Java"></option>
+        </datalist>
+        <button type="submit" class="iconSearch"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="cart">
+        <span>
+            <i data-count="3" class="fa fa-shopping-cart badge"></i>
+        </span>
+    </div>
+</header>
+<main>
+
+    <section class="carrousel">
+        <article class="course-container">
+    <img src="https://www.muylinux.com/wp-content/uploads/2016/05/Java.jpg" alt="logo de Java" class="course-image">
+        </article>
+    </section>
+
+    <section class="pasos-cursos">
+
+    </section>
+
+    <section  class="cursos-destacados">
+
+    </section>
+
+    <section class="medios-pagos">
+
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer-datos">
+        <h4>Datos del grupo</h4>
+    </div>
+    <div class="footer-menu">
+        <h4>Menú inferior</h4>
+    </div>
+    <div class="footer-redes">
+        <h4>Redes sociales</h4>
+    </div>
+</footer>
 </body>
 </html>
