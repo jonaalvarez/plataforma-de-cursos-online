@@ -84,3 +84,51 @@ header {
 .payment-method-icon-container {
   width: 10px;
 }
+
+footer{
+    min-height: 70px;
+    background-color:darkgray ;
+    color: beige;
+    border-top: 1px solid rgba(50, 50, 50, 0.3);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer div{
+    display: block;
+    border: 1px solid rgba(238, 234, 234, 0.986);
+    width: 400px;
+    height: 75px;
+
+}
+
+footer .footer-datos{
+    margin: auto;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+footer .footer-menu{
+    margin: auto;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+footer .footer-redes{
+    margin: auto;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
