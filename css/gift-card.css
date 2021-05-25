@@ -1,0 +1,300 @@
+main {
+  height: 800px !important;
+}
+
+.section-container {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  width: 37%;
+  height: 800px;
+  position: absolute;
+}
+
+.right-section {
+  width: 63%;
+  height: 800px;
+  position: relative;
+  left: 370px;
+}
+
+.price-container {
+  background: #4747bd;
+  color: white;
+  display: flex;
+  width: 80px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-radius: 4px;
+}
+
+.gift-card-container {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 45px;
+  border-radius: 4px;
+}
+
+#section-container-outer-h3 {
+  position: absolute;
+  top: 400px;
+  left: 20px;
+}
+
+/* Form */
+.full-form-container {
+  width: 400px;
+  height: 570px;
+  background-color: #dedede;
+  position: relative;
+  top: 45px;
+}
+
+/* Form - input destinatario */
+.input-nombre-destinatario {
+  position: relative;
+  top: 20px;
+  width: 20em;
+  height: 1.7em;
+  border-radius: 2.5px;
+  border: 0.5px solid;
+}
+
+/* Form - Color */
+
+.input-and-color-container {
+  position: absolute;
+  top: 130px;
+  left: 10px;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+}
+
+.radio-size {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  left: -28px;
+}
+.radio-red-color {
+  border-radius: 50%;
+  background-color: red;
+}
+.radio-blue-color {
+  border-radius: 50%;
+  background-color: blue;
+}
+.radio-green-color {
+  border-radius: 50%;
+  background-color: green;
+}
+
+.radio-purple-color {
+  border-radius: 50%;
+  background-color: #4747bd;
+}
+
+.radio-orange-color {
+  border-radius: 50%;
+  background-color: orange;
+}
+
+#label-picked-color {
+  position: absolute;
+  top: -42px;
+  left: -10px;
+  font-weight: bold;
+}
+
+/* Form - tamaño de la fuente */
+
+.fuente-pick-container {
+  margin-top: 8px;
+  position: absolute;
+  top: 230px;
+  left: 10px;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+}
+
+.fuente-pick-container span {
+  position: relative;
+  font-size: 1em;
+  top: -20px;
+  left: -28px;
+}
+
+#label-picked-fuente {
+  position: absolute;
+  top: -42px;
+  left: -10px;
+  font-weight: bold;
+}
+
+/* Form- monto */
+.monto-container-form {
+  position: absolute;
+  top: 270px;
+}
+.monto-container-form input {
+  width: 20em;
+  height: 1.7em;
+  border-radius: 2.5px;
+  border: 0.5px solid;
+}
+#label-picked-monto {
+  font-weight: bold;
+}
+
+/* Form - ubicación */
+
+.ubicacion-container {
+  position: absolute;
+  top: 360px;
+  left: -44px;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+}
+
+.ubicacion-size {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  left: -58px;
+}
+
+.ubicacion-container input {
+  position: relative;
+  left: -28px;
+}
+
+#label-picked-ubicacion {
+  position: relative;
+  top: -67px;
+  left: 44px;
+  font-weight: bold;
+}
+
+/* Form - ubicacion box */
+.radio-abajo-derecha {
+  background-color: #4747bd;
+}
+.radio-abajo-derecha-mini-box {
+  height: 12px;
+  width: 20px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.radio-arriba-izquierda {
+  background-color: #4747bd;
+}
+.radio-arriba-izquierda-mini-box {
+  height: 12px;
+  width: 20px;
+  background-color: black;
+}
+
+.radio-arriba-derecha {
+  background-color: #4747bd;
+}
+.radio-arriba-derecha-mini-box {
+  height: 12px;
+  width: 20px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+}
+
+/* Form - Fondo */
+.fondo-container {
+  position: absolute;
+  bottom: 60px;
+  left: 4px;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+}
+
+.fondo-size {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  left: -76px;
+}
+
+.fondo-container input {
+  position: relative;
+  left: -46px;
+}
+
+#label-picked-fondo {
+  position: relative;
+  top: -67px;
+  left: -4px;
+  font-weight: bold;
+}
+
+.primer-fondo {
+  background-color: #4747bd;
+}
+
+.segundo-fondo {
+  background-color: #4747bd;
+}
+
+.tercer-fondo {
+  background-color: #4747bd;
+}
+
+.cuarto-fondo {
+  background-color: #4747bd;
+}
+
+.quinto-fondo {
+  background-color: #4747bd;
+}
+
+/* Form - boton confirmar */
+#boton-confirmar {
+  position: absolute;
+  bottom: 15px;
+  border-radius: 30px;
+  background: #4747bd;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  line-height: 1;
+  outline: none;
+  display: block;
+  border: 0;
+  font-size: 18px;
+  font-family: "montserrat";
+}

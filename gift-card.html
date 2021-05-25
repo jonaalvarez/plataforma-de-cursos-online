@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Card</title>
+    <link rel="stylesheet" href="css/gift-card.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Logo</p>
+      </div>
+      <form class="searchBar">
+        <input
+          list="listSearchBar"
+          id="inputSearch"
+          name="searchbar"
+          placeholder="Buscar.."
+        />
+        <datalist id="listSearchBar" class="dataList">
+          <option value="Java"></option>
+        </datalist>
+        <button type="submit" class="iconSearch">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <div class="cart">
+        <span>
+          <i data-count="3" class="fa fa-shopping-cart badge"></i>
+        </span>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="section-container">
+        <section class="left-section">
+          <div class="gift-card-container">
+            <h3>GIFT CARD para</h3>
+            <h2>Destinatario</h2>
+            <div class="price-container">
+              <h3 style="color: white">$8000</h3>
+            </div>
+          </div>
+          <h3 id="section-container-outer-h3">
+            Vista previa de personalización
+          </h3>
+        </section>
+        <section class="right-section">
+          <div class="full-form-container">
+            <h2>Personalización de Gift Card</h2>
+            <!-- Inicio de form -->
+            <form action="">
+              <div>
+                <input
+                  type="text"
+                  class="input-nombre-destinatario"
+                  placeholder="Nombre Destinatario"
+                  required
+                />
+              </div>
+              <!-- Form - Colores y radio button -->
+              <div class="input-and-color-container">
+                <label for="picked-color" id="label-picked-color">Color</label>
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="red"
+                />
+                <div class="radio-size radio-red-color"></div>
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="blue"
+                />
+                <div class="radio-size radio-blue-color"></div>
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="green"
+                />
+                <div class="radio-size radio-green-color"></div>
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="purple"
+                />
+                <div class="radio-size radio-purple-color"></div>
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="orange"
+                />
+                <div class="radio-size radio-orange-color"></div>
+              </div>
+
+              <!-- Form - Tamaño de fuente -->
+              <div class="fuente-pick-container">
+                <label for="picked-color" id="label-picked-fuente"
+                  >Tamaño de fuente</label
+                >
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="red"
+                />
+                <span>20px</span>
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="blue"
+                />
+                <span>28px</span>
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="green"
+                />
+                <span>32px</span>
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="purple"
+                />
+                <span>48px</span>
+                <input
+                  type="radio"
+                  name="picked-color"
+                  id="picked-color"
+                  value="orange"
+                />
+                <span>60px</span>
+              </div>
+
+              <!-- Form - Monto -->
+              <div class="monto-container-form">
+                <label for="monto" id="label-picked-monto">Monto $</label>
+                <input type="number" name="monto" id="monto" />
+              </div>
+
+              <!-- Form - Ubicación -->
+              <div class="ubicacion-container">
+                <label for="picked-ubicacion" id="label-picked-ubicacion"
+                  >Ubicación</label
+                >
+                <input
+                  type="radio"
+                  name="picked-ubicacion"
+                  id="picked-ubicacion"
+                  value="radio-abajo-derecha"
+                />
+                <div class="ubicacion-size radio-abajo-derecha">
+                  <div class="radio-abajo-derecha-mini-box"></div>
+                </div>
+                <input
+                  type="radio"
+                  name="picked-ubicacion"
+                  id="picked-ubicacion"
+                  value="radio-arriba-izquierda"
+                />
+                <div class="ubicacion-size radio-arriba-izquierda">
+                  <div class="radio-arriba-izquierda-mini-box"></div>
+                </div>
+                <input
+                  type="radio"
+                  name="picked-ubicacion"
+                  id="picked-ubicacion"
+                  value="radio-arriba-derecha"
+                />
+                <div class="ubicacion-size radio-arriba-derecha">
+                  <div class="radio-arriba-derecha-mini-box"></div>
+                </div>
+              </div>
+
+              <!-- Form - Fondo -->
+              <div class="fondo-container">
+                <label for="picked-fondo" id="label-picked-fondo">Fondo</label>
+                <input
+                  type="radio"
+                  name="picked-fondo"
+                  id="picked-fondo"
+                  value="primer-fondo"
+                />
+                <div class="fondo-size primer-fondo"></div>
+                <input
+                  type="radio"
+                  name="picked-fondo"
+                  id="picked-fondo"
+                  value="segundo-fondo"
+                />
+                <div class="fondo-size segundo-fondo"></div>
+                <input
+                  type="radio"
+                  name="picked-fondo"
+                  id="picked-fondo"
+                  value="tercer-fondo"
+                />
+                <div class="fondo-size tercer-fondo"></div>
+                <input
+                  type="radio"
+                  name="picked-fondo"
+                  id="picked-fondo"
+                  value="cuarto-fondo"
+                />
+                <div class="fondo-size cuarto-fondo"></div>
+                <input
+                  type="radio"
+                  name="picked-fondo"
+                  id="picked-fondo"
+                  value="quinto-fondo"
+                />
+                <div class="fondo-size quinto-fondo"></div>
+              </div>
+
+              <!-- Form - Boton Confirmar -->
+              <button type="submit" id="boton-confirmar">Confirmar</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-datos">
+        <h4>Datos del grupo</h4>
+      </div>
+      <div class="footer-menu">
+        <h4>Menú inferior</h4>
+      </div>
+      <div class="footer-redes">
+        <h4>Redes sociales</h4>
+      </div>
+    </footer>
+  </body>
+</html>

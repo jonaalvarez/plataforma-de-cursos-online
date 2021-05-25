@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Source Sans Pro, Arial, sans-serif; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+main {
+  background: bisque;
+  height: 1330px !important;
+}
+
+/* Header */
+header {
+  display: flex;
+  background-color: orange;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 4px solid #090402;
+  width: 100%;
+  font-size: 25px;
+}
+
+.logo {
+  background-color: #d88e32;
+  width: 50px;
+  display: flex;
+  padding: 2px 10px 5px 5px;
+  margin: 5px 0 10px 0px;
+}
+
+.searchBar {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: center;
+}
+
+.searchBar input {
+  width: 100%;
+  border: 3px solid white;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchBar .iconSearch {
+  width: 40px;
+  height: 35px;
+  border: 1px solid white;
+  background: white;
+  text-align: center;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cart span {
+  display: flex;
+  padding: 2px 10px 5px 5px;
+  margin: 12px 0 5px 0px;
+}
+
+.badge:after {
+  position: absolute;
+  right: 0%;
+  top: 1%;
+  content: attr(data-count);
+  font-size: 33%;
+  padding: 0.6em;
+  border-radius: 999px;
+  line-height: 0.75em;
+  color: #df0000;
+  text-align: center;
+  min-width: 1em;
+  font-weight: bold;
+  background: white;
+  border-style: solid;
+}
+.payment-method-icon-container {
+  width: 10px;
+}
+
+/* Título Curso section */
+
+#titulo-curso-section {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.course-image-container {
+  height: 240px;
+  width: 200px;
+  position: absolute;
+  left: 70px;
+  top: 25px;
+  background: red;
+}
+
+.course-image-container img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-description-container {
+  width: 640px;
+  height: 240px;
+  position: absolute;
+  left: 280px;
+  top: 25px;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.course-description-container h3 {
+  font-size: 14px;
+}
+
+.boton-inscribirse {
+  border-radius: 30px;
+  background: #4747bd;
+  color: white;
+  bottom: 19px;
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+  padding: 8px 16px;
+  line-height: 1;
+  outline: none;
+  display: block;
+  border: 0;
+  font-size: 18px;
+  font-family: "montserrat";
+}
+
+/* Contenidos por clase section */
+#contenidos-por-clase-section {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.contenidos-por-clase-container {
+  width: 400px;
+  height: 260px;
+  background-color: gray;
+  position: absolute;
+  left: 280px;
+  top: 20px;
+}
+
+.indice-contenidos-por-clase {
+  width: 380px;
+  height: 220px;
+  background-color: brown;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+
+.acordeon {
+  width: 460px;
+  position: absolute;
+  left: 280px;
+}
+
+.acordeon .content-box {
+  position: relative;
+}
+
+.acordeon .content-box .label {
+  position: relative;
+  padding: 10px;
+  background: #4747bd;
+  color: #fff;
+  cursor: pointer;
+}
+
+.acordeon .content-box .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.acordeon .content-box .content {
+  position: relative;
+  padding: 15px;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+/* Docente section */
+
+#docente-section {
+  width: 100%;
+  height: 330px;
+  position: relative;
+}
+
+#docente-section h2 {
+  position: absolute;
+  top: 2px;
+  left: 65px;
+}
+
+.docente-container {
+  width: 100%;
+  height: 220px;
+  background-color: #dadada8a;
+  position: absolute;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#docente-section img {
+  width: 165px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.docente-container p {
+  padding: 20px;
+  position: relative;
+  bottom: 30px;
+  display: inline-block;
+}
+
+.docente-container h3 {
+  position: absolute;
+  bottom: 2px;
+  margin-left: 70px;
+}
+
+.star-container {
+  position: absolute;
+  top: 12px;
+  left: 233px;
+}
+
+/* Other courses section */
+
+#other-courses-section {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background: #dadada8a;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#other-courses-section img {
+  margin-left: 0;
+}
+
+#other-courses-section h2 {
+  position: absolute;
+  top: 2px;
+}
