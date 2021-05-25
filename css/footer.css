@@ -3,10 +3,10 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #6b6666;
+  background-color: orange;
+  border-top: 4px solid #090402;
   text-align: start;
   color: beige;
-  border-top: 1px solid rgba(50, 50, 50, 0.3);
   width: 100%;
   position: relative;
   bottom: 0;
