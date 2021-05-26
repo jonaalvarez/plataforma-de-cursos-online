@@ -374,7 +374,7 @@ header {
   background-color: rgba(30, 143, 255, 0);
   border: none;
   color: green;
-  padding: 12px 0px;
+  padding: 12px 5px;
   font-size: 30px;
   cursor: pointer;
 }
@@ -387,7 +387,7 @@ header {
 
 .button-add-person {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 14%;}
 
 .button-add-person span {
@@ -425,6 +425,6 @@ button:hover{
 }
 
 .subscribe-main {
-  height: 600px;
+  max-height: calc(100vh - 20vh);
 }
 
