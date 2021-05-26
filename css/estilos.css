@@ -21,12 +21,12 @@ header {
   font-size: 25px;
 }
 
-.logo {
+.logo{
   background-color: #d88e32;
   width: 50px;
   display: flex;
   padding: 2px 10px 5px 5px;
-  margin: 5px 0 10px 0px;
+  margin: 5px 0 5px 10px;
 }
 
 .searchBar {
@@ -147,35 +147,31 @@ header {
 }
 
 /* Nav Header */
-
-.logo-nav-container {
+.nav-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
 }
 
-.navigation ul {
-  margin: 0;
-  padding: 0;
+.nav-container ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container li {
   list-style: none;
 }
 
-.navigation li {
-  display: inline-block;
-}
-
-.navigation ul li a {
-  display: block;
-  padding: 0.5rem 1rem;
+.nav-container a {
   transition: all 0.4s linear;
   border-radius: 5px;
   color: white;
+  padding: 3px 10px 0px 10px;
   text-decoration: none;
 }
 
-.navigation ul li a:hover {
-  background: #e8000033;
+.nav-container a:hover {
+  background-color: grey;
 }
 
 /* Cursos destacados */
