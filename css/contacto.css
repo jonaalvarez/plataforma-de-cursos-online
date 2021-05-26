@@ -34,6 +34,8 @@ section #contactoInputNombre {
   width: 460px;
   height: 25px;
   position: relative;
+  border: 3px solid white;
+  border-radius: 2.5px;
 }
 
 section #contactoInputApellido {
@@ -41,6 +43,8 @@ section #contactoInputApellido {
   width: 460px;
   height: 25px;
   position: relative;
+  border: 3px solid white;
+  border-radius: 2.5px;
 }
 
 section #contactoInputMail {
@@ -48,6 +52,8 @@ section #contactoInputMail {
   width: 460px;
   height: 25px;
   position: relative;
+  border: 3px solid white;
+  border-radius: 2.5px;
 }
 
 section #contactoTextAreaDescripcion {
@@ -55,6 +61,8 @@ section #contactoTextAreaDescripcion {
   width: 460px;
   height: 120px;
   position: relative;
+  border: 3px solid white;
+  border-radius: 2.5px;
 }
 
 section button {
@@ -87,6 +95,7 @@ section button {
   height: 270px;
   background-color: #dedede;
   text-align: center;
+  border-radius: 2.5px;
 }
 
 /* Section mapa */
@@ -96,6 +105,7 @@ section button {
   background-color: #dedede;
   position: absolute;
   top: 430px;
+  border-radius: 2.5px;
 }
 
 .section-mapa h2 {

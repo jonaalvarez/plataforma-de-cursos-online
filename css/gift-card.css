@@ -42,13 +42,14 @@ main {
   position: absolute;
   width: 350px;
   height: 350px;
-  background-color: #dedede;
+  background-color: #c9d6ff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   top: 45px;
   border-radius: 4px;
+  box-shadow: 7px 7px 0px -2px rgba(0, 0, 0, 0.2);
 }
 
 #section-container-outer-h3 {
@@ -61,19 +62,21 @@ main {
 .full-form-container {
   width: 400px;
   height: 570px;
-  background-color: #dedede;
+  background-color: #c9d6ff;
   position: relative;
   top: 45px;
+  box-shadow: 7px 7px 0px -2px rgba(0, 0, 0, 0.2);
 }
 
 /* Form - input destinatario */
 .input-nombre-destinatario {
   position: relative;
   top: 20px;
+  left: 1px;
   width: 20em;
   height: 1.7em;
   border-radius: 2.5px;
-  border: 0.5px solid;
+  border: 3px solid white;
 }
 
 /* Form - Color */
@@ -160,7 +163,7 @@ main {
   width: 20em;
   height: 1.7em;
   border-radius: 2.5px;
-  border: 0.5px solid;
+  border: 3px solid white;
 }
 #label-picked-monto {
   font-weight: bold;
@@ -171,7 +174,7 @@ main {
 .ubicacion-container {
   position: absolute;
   top: 360px;
-  left: -44px;
+  left: -40px;
   display: block;
   height: fit-content;
   width: fit-content;
@@ -194,7 +197,7 @@ main {
 #label-picked-ubicacion {
   position: relative;
   top: -67px;
-  left: 44px;
+  left: 40px;
   font-weight: bold;
 }
 

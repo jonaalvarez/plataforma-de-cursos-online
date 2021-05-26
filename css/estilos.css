@@ -5,8 +5,8 @@
 }
 
 main {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
   height: 1700px;
 }
 
@@ -35,7 +35,7 @@ header {
   justify-content: center;
 }
 
- .searchBar input {
+.searchBar input {
   width: 100%;
   border: 3px solid white;
   border-right: none;
@@ -146,6 +146,38 @@ header {
   background-color: #d2d1cb;
 }
 
+/* Nav Header */
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation ul li a:hover {
+  background: #e8000033;
+}
+
 /* Cursos destacados */
 .cursos-destacados {
   width: 100%;
@@ -161,7 +193,7 @@ header {
   width: 260px;
   height: 300px;
   border: solid gainsboro;
-  background-color: gainsboro;
+  background-color: #c9d6ff;
   display: flex;
   justify-content: center;
   position: relative;
@@ -338,12 +370,12 @@ header {
 .formulario-subcribe {
   display: flex;
   flex-direction: column;
-  justify-content: space-between  ;
+  justify-content: space-between;
   margin: 50px 0px 0px 200px;
 }
 
 .element-form {
-  display:flex;
+  display: flex;
   flex-direction: row;
   max-width: 80%;
   padding-bottom: 20px;
@@ -358,13 +390,13 @@ header {
   color: #9dbfaf;
 }
 
-.element-form  input {
+.element-form input {
   justify-content: space-between;
   border-radius: 5px 5px 5px 5px;
   margin-right: 25px;
 }
 
-.element-form  i {
+.element-form i {
   font-size: 160%;
   color: red;
   padding-top: 5px;
@@ -381,14 +413,14 @@ header {
 
 .btn:hover {
   background-color: transparent;
-  border: 0px solid transparent
-
+  border: 0px solid transparent;
 }
 
 .button-add-person {
   display: flex;
   justify-content: space-evenly;
-  max-width: 14%;}
+  max-width: 14%;
+}
 
 .button-add-person span {
   padding-top: 20px;
@@ -419,7 +451,7 @@ button {
   background-color: orange;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(228, 103, 19);
   border: 3px solid rgb(228, 103, 19);
 }
@@ -427,4 +459,3 @@ button:hover{
 .subscribe-main {
   max-height: calc(100vh - 20vh);
 }
-
