@@ -114,10 +114,14 @@ header {
   position: absolute;
   left: 280px;
   top: 25px;
-  border: solid 1px #c9d6ff;
-  background-color: #c9d6ff;
+  border: solid 1px white;
+  background-color: white;
   border-radius: 5px;
   padding: 15px;
+}
+
+.course-description-container h2 {
+  text-decoration: underline;
 }
 
 .course-description-container h3 {
