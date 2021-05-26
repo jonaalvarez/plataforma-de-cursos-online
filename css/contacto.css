@@ -93,7 +93,7 @@ section button {
 #datos-de-contacto {
   width: 464px;
   height: 273px;
-  background-color: #c9d6ff;
+  background-color: white;
   text-align: center;
   border-radius: 2.5px;
 }
@@ -102,7 +102,7 @@ section button {
 .section-mapa {
   width: 990px;
   height: 270px;
-  background-color: #c9d6ff;
+  background-color: white;
   position: absolute;
   top: 430px;
   border-radius: 2.5px;
