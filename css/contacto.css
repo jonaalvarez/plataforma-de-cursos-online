@@ -34,6 +34,8 @@ section #contactoInputNombre {
   width: 460px;
   height: 25px;
   position: relative;
+  border: 3px solid white;
+  border-radius: 2.5px;
 }
 
 section #contactoInputApellido {
@@ -41,6 +43,8 @@ section #contactoInputApellido {
   width: 460px;
   height: 25px;
   position: relative;
+  border: 3px solid white;
+  border-radius: 2.5px;
 }
 
 section #contactoInputMail {
@@ -48,6 +52,8 @@ section #contactoInputMail {
   width: 460px;
   height: 25px;
   position: relative;
+  border: 3px solid white;
+  border-radius: 2.5px;
 }
 
 section #contactoTextAreaDescripcion {
@@ -55,6 +61,8 @@ section #contactoTextAreaDescripcion {
   width: 460px;
   height: 120px;
   position: relative;
+  border: 3px solid white;
+  border-radius: 2.5px;
 }
 
 section button {
@@ -74,7 +82,7 @@ section button {
   font-family: "montserrat";
 }
 
-/* Contacto input datos section */
+/* Contacto datos section */
 
 .section-datos-de-contacto {
   width: 464px;
@@ -84,18 +92,20 @@ section button {
 
 #datos-de-contacto {
   width: 464px;
-  height: 270px;
-  background-color: #dedede;
+  height: 273px;
+  background-color: white;
   text-align: center;
+  border-radius: 2.5px;
 }
 
 /* Section mapa */
 .section-mapa {
   width: 990px;
   height: 270px;
-  background-color: #dedede;
+  background-color: white;
   position: absolute;
   top: 430px;
+  border-radius: 2.5px;
 }
 
 .section-mapa h2 {

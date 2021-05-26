@@ -115,8 +115,13 @@ header {
   left: 280px;
   top: 25px;
   border: solid 1px white;
+  background-color: white;
   border-radius: 5px;
   padding: 15px;
+}
+
+.course-description-container h2 {
+  text-decoration: underline;
 }
 
 .course-description-container h3 {
@@ -195,7 +200,7 @@ header {
 .acordeon .content-box .content {
   position: relative;
   padding: 15px;
-  background: #fff;
+  background: #c9d6ff;
   height: 0;
   overflow: hidden;
   transition: 0.5s;

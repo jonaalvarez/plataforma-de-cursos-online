@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso Acade</title>
+    <title>Coursite</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
   </head>
   <body>
     <header>
       <div class="logo">
-        <p>Logo</p>
+        <p>Coursite</p>
       </div>
       <form class="searchBar">
         <input
           list="listSearchBar"
           id="inputSearch"
           name="searchbar"
-          placeholder="Buscar.."
-        />
+          placeholder="Buscar.."/>
         <datalist id="listSearchBar" class="dataList">
           <option value="Java"></option>
         </datalist>
@@ -27,12 +30,23 @@
           <i class="fa fa-search"></i>
         </button>
       </form>
+      <!-- Cart -->
       <div class="cart">
         <span>
           <i data-count="3" class="fa fa-shopping-cart badge"></i>
         </span>
       </div>
     </header>
+            <!-- Nav Header -->
+              <nav class="nav-container">
+                <ul>
+                  <li><a href="./index.html">Inicio</a></li>
+                  <li><a href="./detalle-de-curso.html">Curso</a></li>
+                  <li><a href="./gift-card.html">Gift Cards</a></li>
+                  <li><a href="./subscribe-course.html">Inscripción</a></li>
+                  <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+              </nav>
     <main>
       <section class="index">
         <article class="title">
@@ -83,7 +97,9 @@
                 <h3>Introducción a Vue.js</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -107,7 +123,9 @@
                 <h3>Python avanzado</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -131,7 +149,9 @@
                 <h3>Git para principiantes</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -155,7 +175,9 @@
                 <h3>React intermedio</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -179,7 +201,9 @@
                 <h3>Fundamentos de Java</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -203,7 +227,9 @@
                 <h3>Javascript desde cero</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -220,22 +246,22 @@
           <i class="fa fa-chevron-right fa-5x" style="color: white"></i>
         </div>
         <div class="medio-de-pago-container">
-         <div><img src="img/cards/visa.png" alt=""></div>
-         <div><img src="img/cards/paypal.png" alt=""></div>
-         <div><img src="img/cards/master.png" alt=""></div>
-         <div><img src="img/cards/american.svg" alt=""></div>
+          <div><img src="img/cards/visa.png" alt="" /></div>
+          <div><img src="img/cards/paypal.png" alt="" /></div>
+          <div><img src="img/cards/master.png" alt="" /></div>
+          <div><img src="img/cards/american.svg" alt="" /></div>
         </div>
       </section>
     </main>
     <footer>
       <div class="footer-datos">
-        <h4>Datos del grupo</h4>
+        <h4>Álvarez, Brítez, Oubel</h4>
       </div>
       <div class="footer-menu">
         <h4>Menú inferior</h4>
       </div>
       <div class="footer-redes">
-        <h4>Redes sociales</h4>
+        <h4><i class="fab fa-instagram"></i> Coursite</h4>
       </div>
     </footer>
   </body>

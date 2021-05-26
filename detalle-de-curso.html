@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detalle de curso</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
     <link rel="stylesheet" href="css/detalle-de-curso.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/estilos.css" />
@@ -16,7 +17,7 @@
   <body>
     <header>
       <div class="logo">
-        <p>Logo</p>
+        <p>Coursite</p>
       </div>
       <form class="searchBar">
         <input
@@ -32,12 +33,23 @@
           <i class="fa fa-search"></i>
         </button>
       </form>
+      <!-- Cart -->
       <div class="cart">
         <span>
           <i data-count="3" class="fa fa-shopping-cart badge"></i>
         </span>
       </div>
     </header>
+     <!-- Nav Header -->
+     <nav class="nav-container">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./detalle-de-curso.html">Curso</a></li>
+        <li><a href="./gift-card.html">Gift Cards</a></li>
+        <li><a href="./subscribe-course.html">Inscripción</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
     <main>
       <!-- Titulo curso section -->
       <section id="titulo-curso-section">
@@ -47,16 +59,16 @@
         <div class="course-description-container">
           <h2>React intermedio</h2>
           <br />
-          <h3>Valor: $10000</h3>
+          <h3>- Valor: $10000</h3>
           <br />
           <h3>
-            Descripción del curso: Context APIs, Manejar el estado de tu
+            - Descripción del curso: Context APIs, Manejar el estado de tu
             aplicación, Patrones de Diseño en React, Refactorizar una aplicación
             con Render, Uso de técnicas Hook
           </h3>
           <br />
           <h3>
-            Requisitos previos: Conocimientos de HTML, CSS, Javascript, props,
+            - Requisitos previos: Conocimientos de HTML, CSS, Javascript, props,
             hooks, clases, state, API Rest.
           </h3>
           <br />
@@ -149,7 +161,9 @@
                 <h3>Introducción a Vue.js</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -173,7 +187,9 @@
                 <h3>Git para principiantes</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -197,7 +213,9 @@
                 <h3>Fundamentos de Java</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -221,7 +239,9 @@
                 <h3>Javascript desde cero</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
-              <button class="boton-comprar">Comprar</button>
+              <a href="./detalle-de-curso.html"
+                ><button class="boton-comprar">Comprar</button></a
+              >
             </div>
           </div>
         </div>
@@ -229,13 +249,13 @@
     </main>
     <footer>
       <div class="footer-datos">
-        <h4>Datos del grupo</h4>
+        <h4>Álvarez, Brítez, Oubel</h4>
       </div>
       <div class="footer-menu">
         <h4>Menú inferior</h4>
       </div>
       <div class="footer-redes">
-        <h4>Redes sociales</h4>
+        <h4><i class="fa fa-instagram" style="color: white"></i> Coursite</h4>
       </div>
     </footer>
   </body>
