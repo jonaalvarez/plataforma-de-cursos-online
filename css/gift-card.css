@@ -238,7 +238,7 @@ main {
 .fondo-container {
   position: absolute;
   bottom: 60px;
-  left: 4px;
+  left: 6px;
   display: block;
   height: fit-content;
   width: fit-content;
@@ -261,7 +261,7 @@ main {
 #label-picked-fondo {
   position: relative;
   top: -67px;
-  left: -4px;
+  left: -5px;
   font-weight: bold;
 }
 
