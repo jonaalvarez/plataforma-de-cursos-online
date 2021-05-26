@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Logo</p>
+      </div>
+      <form class="searchBar">
+        <input
+          list="listSearchBar"
+          id="inputSearch"
+          name="searchbar"
+          placeholder="Buscar.."
+        />
+        <datalist id="listSearchBar" class="dataList">
+          <option value="Java"></option>
+        </datalist>
+        <button type="submit" class="iconSearch">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <div class="cart">
+        <span>
+          <i data-count="3" class="fa fa-shopping-cart badge"></i>
+        </span>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="section-container">
+        <section class="section-contacto">
+          <div class="contacto-form-container">
+            <h2 id="tituloContacto">CONTACTO</h2>
+            <form action="">
+              <br />
+              <label
+                ><input
+                  type="text"
+                  placeholder="Nombre"
+                  id="contactoInputNombre"
+              /></label>
+              <br /><br />
+              <label
+                ><input
+                  type="text"
+                  placeholder="Apellido"
+                  id="contactoInputApellido"
+              /></label>
+              <br /><br />
+              <label
+                ><input
+                  type="email"
+                  placeholder="E-Mail"
+                  id="contactoInputMail"
+              /></label>
+              <br /><br />
+              <label>
+                <textarea
+                  name="textarea"
+                  id="contactoTextAreaDescripcion"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </label>
+              <br />
+              <button>Enviar</button>
+            </form>
+          </div>
+        </section>
+        <section class="section-datos-de-contacto">
+          <div id="datos-de-contacto">
+            <h3>Datos de contacto</h3>
+            <br />
+            <h4>coursite@gmail.com</h4>
+            <br />
+            <h4>01143567656</h4>
+            <br />
+            <h4>Avenida de Mayo 675 - Ramos Mejía</h4>
+          </div>
+        </section>
+        <section class="section-mapa">
+          <div><h2>Google Maps</h2></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-datos">
+        <h4>Datos del grupo</h4>
+      </div>
+      <div class="footer-menu">
+        <h4>Menú inferior</h4>
+      </div>
+      <div class="footer-redes">
+        <h4>Redes sociales</h4>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #6b6666;
+  text-align: start;
+  color: beige;
+  border-top: 1px solid rgba(50, 50, 50, 0.3);
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+footer div {
+  display: block;
+  border: 1px solid rgba(238, 234, 234, 0.986);
+  margin: 20px;
+  padding: 70px;
+  width: calc(25% - 70px);
+}

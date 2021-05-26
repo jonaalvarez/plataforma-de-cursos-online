@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso Acade</title>
-    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Detalle de curso</title>
+    <link rel="stylesheet" href="css/detalle-de-curso.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -34,35 +39,96 @@
       </div>
     </header>
     <main>
-      <section class="index">
-        <article class="title">
-          <h2>Tu Curso aquí mismo</h2>
+      <!-- Titulo curso section -->
+      <section id="titulo-curso-section">
+        <div class="course-image-container">
+          <img src="img/course-logo-img/React.jpg" alt="" />
+        </div>
+        <div class="course-description-container">
+          <h2>React intermedio</h2>
           <br />
-          <p>Encuentra lo que quieras estudiar.</p>
-        </article>
-        <article class="index-image">
-          <img src="img/index-image.jpg" />
-        </article>
+          <h3>Valor: $10000</h3>
+          <br />
+          <h3>
+            Descripción del curso: Context APIs, Manejar el estado de tu
+            aplicación, Patrones de Diseño en React, Refactorizar una aplicación
+            con Render, Uso de técnicas Hook
+          </h3>
+          <br />
+          <h3>
+            Requisitos previos: Conocimientos de HTML, CSS, Javascript, props,
+            hooks, clases, state, API Rest.
+          </h3>
+          <br />
+          <button class="boton-inscribirse">Inscribirse</button>
+        </div>
       </section>
 
-      <section class="pasos-cursos">
-        <article class="elemento paso-1">
-          <i class="fa fa-hand-pointer"></i>
-          <p>Elije tu curso.</p>
-        </article>
-        <article class="elemento pasos-2">
-          <i class="fa fa-shopping-basket"></i>
-          <p>Añade al carrito.</p>
-        </article>
-        <article class="elemento paso-3">
-          <i class="fa fa-desktop"></i>
-          <p>Empieza a disfrutar.</p>
-        </article>
+      <!-- Contenidos por clase section -->
+      <section id="contenidos-por-clase-section">
+        <div class="acordeon">
+          <div class="content-box">
+            <div class="label">Introduccion</div>
+            <div class="content">
+              <p>Instalación, React DOM, importar librerías</p>
+            </div>
+          </div>
+          <div class="content-box">
+            <div class="label">Unidad 1</div>
+            <div class="content">
+              <p>This, render, props</p>
+            </div>
+          </div>
+          <div class="content-box">
+            <div class="label">Unidad 2</div>
+            <div class="content">
+              <p>Hooks, componentes funcionales</p>
+            </div>
+          </div>
+          <div class="content-box">
+            <div class="label">Unidad 3</div>
+            <div class="content">
+              <p>Prop drilling, React Context</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- Cursos destacados -->
-      <h2 class="h2-title">CURSOS DESTACADOS</h2>
-      <section class="cursos-destacados">
+      <!-- Docente section -->
+      <section id="docente-section">
+        <div class="docente-container">
+          <h2>Instructor</h2>
+          <img
+            src="https://edteam-media.s3.amazonaws.com/users/avatar/7a223c1d-8400-4b79-982a-46d45c62a667.png"
+            alt="Foto de Alvaro Felipe"
+          />
+          <h3>Álvaro Felipe</h3>
+          <div class="star-container" style="color: gold">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi sed
+            possimus praesentium, earum cumque itaque, dignissimos minima
+            nostrum quas distinctio nihil amet numquam officiis repellendus
+            consectetur deleniti! Porro, totam ipsa! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ad cumque officiis, sunt earum nihil
+            ea quia numquam, itaque, corporis quisquam repellat repellendus?
+            Iure natus quaerat fuga reiciendis veritatis ab perferendis. Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            necessitatibus, porro magni consequuntur similique modi suscipit,
+            amet molestiae magnam labore culpa incidunt vero autem sed quas
+            molestias atque! Repudiandae, aut.
+          </p>
+        </div>
+      </section>
+
+      <!-- Other courses section -->
+      <section id="other-courses-section">
+        <h2>También te puede interesar</h2>
         <div class="full-card-container">
           <div class="inner-image-container">
             <img
@@ -90,30 +156,6 @@
         <div class="full-card-container">
           <div class="inner-image-container">
             <img
-              src="./img/course-logo-img/Python-logo.jpg"
-              alt="Logo de Java"
-              class="course-card-img"
-            />
-            <div class="price-container">
-              <h3 style="color: white">$12000</h3>
-            </div>
-          </div>
-          <div class="card-text-container">
-            <div class="card-text-container-left">
-              <h3>20 hs</h3>
-            </div>
-            <div class="card-text-container-right">
-              <div class="card-text-container-right-div">
-                <h3>Python avanzado</h3>
-                <h3 class="ver-detalle">Ver detalle</h3>
-              </div>
-              <button class="boton-comprar">Comprar</button>
-            </div>
-          </div>
-        </div>
-        <div class="full-card-container">
-          <div class="inner-image-container">
-            <img
               src="./img/course-logo-img/git.jpg"
               alt="Logo de Java"
               class="course-card-img"
@@ -129,30 +171,6 @@
             <div class="card-text-container-right">
               <div class="card-text-container-right-div">
                 <h3>Git para principiantes</h3>
-                <h3 class="ver-detalle">Ver detalle</h3>
-              </div>
-              <button class="boton-comprar">Comprar</button>
-            </div>
-          </div>
-        </div>
-        <div class="full-card-container">
-          <div class="inner-image-container">
-            <img
-              src="./img/course-logo-img/React.jpg"
-              alt="Logo de React"
-              class="course-card-img"
-            />
-            <div class="price-container">
-              <h3 style="color: white">$10000</h3>
-            </div>
-          </div>
-          <div class="card-text-container">
-            <div class="card-text-container-left">
-              <h3>20 hs</h3>
-            </div>
-            <div class="card-text-container-right">
-              <div class="card-text-container-right-div">
-                <h3>React intermedio</h3>
                 <h3 class="ver-detalle">Ver detalle</h3>
               </div>
               <button class="boton-comprar">Comprar</button>
@@ -206,24 +224,6 @@
               <button class="boton-comprar">Comprar</button>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Medios de pago -->
-
-      <section class="medios-pagos">
-        <h2 class="h2-second-title">MEDIOS DE PAGO</h2>
-        <div class="medio-de-pago-left-icon-container">
-          <i class="fa fa-chevron-left fa-5x" style="color: white"></i>
-        </div>
-        <div class="medio-de-pago-right-icon-container">
-          <i class="fa fa-chevron-right fa-5x" style="color: white"></i>
-        </div>
-        <div class="medio-de-pago-container">
-         <div><img src="img/cards/visa.png" alt=""></div>
-         <div><img src="img/cards/paypal.png" alt=""></div>
-         <div><img src="img/cards/master.png" alt=""></div>
-         <div><img src="img/cards/american.svg" alt=""></div>
         </div>
       </section>
     </main>
