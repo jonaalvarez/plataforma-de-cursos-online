@@ -114,7 +114,8 @@ header {
   position: absolute;
   left: 280px;
   top: 25px;
-  border: solid 1px white;
+  border: solid 1px #c9d6ff;
+  background-color: #c9d6ff;
   border-radius: 5px;
   padding: 15px;
 }
@@ -195,7 +196,7 @@ header {
 .acordeon .content-box .content {
   position: relative;
   padding: 15px;
-  background: #fff;
+  background: #c9d6ff;
   height: 0;
   overflow: hidden;
   transition: 0.5s;
