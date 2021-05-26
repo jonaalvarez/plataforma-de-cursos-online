@@ -1,0 +1,103 @@
+main {
+  height: 850px !important;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+}
+
+/* Section contacto */
+
+.section-contacto {
+  width: 464px;
+  height: 270px;
+  margin: 30px;
+}
+
+.contacto-form-container {
+  position: relative;
+  top: -116px;
+  left: -150px;
+}
+
+section #tituloContacto {
+  margin-left: 150px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+section #contactoInputNombre {
+  margin-left: 150px;
+  width: 460px;
+  height: 25px;
+  position: relative;
+}
+
+section #contactoInputApellido {
+  margin-left: 150px;
+  width: 460px;
+  height: 25px;
+  position: relative;
+}
+
+section #contactoInputMail {
+  margin-left: 150px;
+  width: 460px;
+  height: 25px;
+  position: relative;
+}
+
+section #contactoTextAreaDescripcion {
+  margin-left: 150px;
+  width: 460px;
+  height: 120px;
+  position: relative;
+}
+
+section button {
+  border-radius: 30px;
+  background: #4747bd;
+  color: white;
+  position: relative;
+  left: 535px;
+  bottom: -10px;
+  cursor: pointer;
+  padding: 8px 16px;
+  line-height: 1;
+  outline: none;
+  display: block;
+  border: 0;
+  font-size: 18px;
+  font-family: "montserrat";
+}
+
+/* Contacto input datos section */
+
+.section-datos-de-contacto {
+  width: 464px;
+  height: 270px;
+  margin: 30px;
+}
+
+#datos-de-contacto {
+  width: 464px;
+  height: 270px;
+  background-color: #dedede;
+  text-align: center;
+}
+
+/* Section mapa */
+.section-mapa {
+  width: 990px;
+  height: 270px;
+  background-color: #dedede;
+  position: absolute;
+  top: 430px;
+}
+
+.section-mapa h2 {
+  text-align: center;
+}
