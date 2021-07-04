@@ -7,12 +7,19 @@
     <link rel="icon" type="image/png" href="./img/favicon.png" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link
-      rel="stylesheet"
-      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+   
   </head>
   <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+   
     <header>
       <div class="logo">
         <p>Coursite</p>
@@ -32,8 +39,8 @@
       </form>
       <!-- Cart -->
       <div class="cart">
-        <span>
-          <i data-count="3" class="fa fa-shopping-cart badge"></i>
+        <span id="cart-counter">
+          <i id="counter" data-count="0" class="fa fa-shopping-cart badge"></i>
         </span>
       </div>
     </header>
@@ -48,7 +55,7 @@
                 </ul>
               </nav>
     <main>
-      <section class="index">
+      <!-- <section class="index">
         <article class="title">
           <h2>Tu Curso aquí mismo</h2>
           <br />
@@ -57,7 +64,17 @@
         <article class="index-image">
           <img src="img/index-image.jpg" />
         </article>
+      </section> -->
+
+      <section class="index">
+        <div class="carousel">
+          <div><img src="img/index-image-1.jpg" /></div>
+          <div><img src="img/index-image-2.jpg" /></div>
+          <div><img src="img/index-image-3.jpg" /></div>
+        </div>
       </section>
+      
+
 
       <section class="pasos-cursos">
         <article class="elemento paso-1">
@@ -95,14 +112,12 @@
             <div class="card-text-container-right">
               <div class="card-text-container-right-div">
                 <h3>Introducción a Vue.js</h3>
-                <h3 class="ver-detalle">Ver detalle</h3>
+                <h3 class="ver-detalle"><a href="./detalle-de-curso.html">Ver detalle</h3></a>
               </div>
-              <a href="./detalle-de-curso.html"
-                ><button class="boton-comprar">Comprar</button></a
-              >
+              <a><button class="boton-comprar">Comprar</button></a>
             </div>
           </div>
-        </div>
+        </div>  
         <div class="full-card-container">
           <div class="inner-image-container">
             <img
@@ -121,11 +136,9 @@
             <div class="card-text-container-right">
               <div class="card-text-container-right-div">
                 <h3>Python avanzado</h3>
-                <h3 class="ver-detalle">Ver detalle</h3>
+                <h3 class="ver-detalle"><a href="./detalle-de-curso.html">Ver detalle</h3></a>
               </div>
-              <a href="./detalle-de-curso.html"
-                ><button class="boton-comprar">Comprar</button></a
-              >
+              <a><button class="boton-comprar">Comprar</button></a>
             </div>
           </div>
         </div>
@@ -147,11 +160,8 @@
             <div class="card-text-container-right">
               <div class="card-text-container-right-div">
                 <h3>Git para principiantes</h3>
-                <h3 class="ver-detalle">Ver detalle</h3>
-              </div>
-              <a href="./detalle-de-curso.html"
-                ><button class="boton-comprar">Comprar</button></a
-              >
+                <h3 class="ver-detalle"><a href="./detalle-de-curso.html">Ver detalle</h3></a>
+              </div><a><button class="boton-comprar">Comprar</button></a>
             </div>
           </div>
         </div>
@@ -173,9 +183,9 @@
             <div class="card-text-container-right">
               <div class="card-text-container-right-div">
                 <h3>React intermedio</h3>
-                <h3 class="ver-detalle">Ver detalle</h3>
+                <h3 class="ver-detalle"><a href="./detalle-de-curso.html">Ver detalle</h3></a>
               </div>
-              <a href="./detalle-de-curso.html"
+              <a 
                 ><button class="boton-comprar">Comprar</button></a
               >
             </div>
@@ -199,9 +209,9 @@
             <div class="card-text-container-right">
               <div class="card-text-container-right-div">
                 <h3>Fundamentos de Java</h3>
-                <h3 class="ver-detalle">Ver detalle</h3>
+                <h3 class="ver-detalle"><a href="./detalle-de-curso.html">Ver detalle</h3></a>
               </div>
-              <a href="./detalle-de-curso.html"
+              <a 
                 ><button class="boton-comprar">Comprar</button></a
               >
             </div>
@@ -225,9 +235,9 @@
             <div class="card-text-container-right">
               <div class="card-text-container-right-div">
                 <h3>Javascript desde cero</h3>
-                <h3 class="ver-detalle">Ver detalle</h3>
+                <h3 class="ver-detalle"><a href="./detalle-de-curso.html">Ver detalle</h3></a>
               </div>
-              <a href="./detalle-de-curso.html"
+              <a
                 ><button class="boton-comprar">Comprar</button></a
               >
             </div>
