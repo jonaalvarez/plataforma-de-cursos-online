@@ -264,7 +264,7 @@ main {
 
 /* Form - ubicacion box */
 .radio-centro {
-  background-color: #4747bd;
+  background-color: white;
 }
 .radio-centro-mini-box {
   height: 12px;
@@ -276,7 +276,7 @@ main {
 }
 
 .radio-top {
-  background-color: #4747bd;
+  background-color: white;
 }
 .radio-top-mini-box {
   height: 12px;
@@ -288,7 +288,7 @@ main {
 }
 
 .radio-bottom {
-  background-color: #4747bd;
+  background-color: white;
 }
 .radio-bottom-mini-box {
   height: 12px;

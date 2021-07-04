@@ -396,6 +396,7 @@ header {
   font-size: 160%;
   color: red;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .btn {
@@ -410,6 +411,10 @@ header {
 .btn:hover {
   background-color: transparent;
   border: 0px solid transparent;
+}
+
+#prueba {
+  cursor: pointer;
 }
 
 .button-add-person {

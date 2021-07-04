@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inscripción</title>
+    <title>Coursite - Inscripción</title>
     <link rel="icon" type="image/png" href="./img/favicon.png" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/subscribe-course-script.js"></script>
   </head>
   <body>
     <header>
@@ -53,26 +55,13 @@
         <h5>INSCRIPCION</h5>
       </div>
       <form action="" class="formulario-subcribe">
-        <div class="element-form">
-          <input type="text" placeholder="Nombre">
-          <input type="text" placeholder="Apellido">
-          <input type="text" placeholder="DNI">
-          <i class="fas fa-minus-circle"></i>
-        </div>
-       
-
-        <div class="element-form">
-          <input type="text" placeholder="Nombre">
-          <input type="text" placeholder="Apellido">
-          <input type="text" placeholder="DNI">
-          <i class="fas fa-minus-circle"></i>
-        </div>
-
-        <div class="element-form">
-          <input type="text" placeholder="Nombre">
-          <input type="text" placeholder="Apellido">
-          <input type="text" placeholder="DNI">
-          <i class="fas fa-minus-circle"></i>
+        <div class="element-form-container">
+          <div id="0" class="element-form">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+            <input type="text" placeholder="DNI">
+            <span class="btn-borrar"><i id="prueba" class="fas fa-minus-circle"></i></span>
+          </div>
         </div>
         
         <div class="button-add-person">
@@ -84,7 +73,6 @@
           <span>$000.</span>
           <button class="btn-subscribe">INSCRIBIRSE</i></button>
         </div>
-       
       </form>      
     </main>
     <footer>
