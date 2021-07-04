@@ -13,7 +13,9 @@ $(document).ready(function(){
         }
     })
 
-    $(".btn-borrar").click(function(e){
+    $("#0").click(function(e){
         console.log(e);
     })
+
+     
 })
