@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/gift-card-script.js"></script>
   </head>
   <body>
     <header>
@@ -54,11 +56,13 @@
     <main>
       <div class="section-container">
         <section class="left-section">
-          <div class="gift-card-container">
-            <h3>GIFT CARD para</h3>
-            <h2>Destinatario</h2>
+          <div class="gift-card-container container-default-color gift-card-container-radio-centro">
+            <div id="destinatario-text-container" class="container-default-font-size destinatario-text-default-color">
+              <h3 id="destinatario-h3">GIFT CARD para</h3>
+              <h2 id="destinatario-h2">Destinatario</h2>
+            </div>
             <div class="price-container">
-              <h3 style="color: white">$8000</h3>
+              <h3 id="gift-card-monto" style="color: white">$0</h3>
             </div>
           </div>
           <h3 id="section-container-outer-h3">
@@ -75,7 +79,10 @@
                   type="text"
                   class="input-nombre-destinatario"
                   placeholder="Nombre Destinatario"
+                  name="destinatario"
+                  id="destinatario"
                   required
+                  maxlength="18"
                 />
               </div>
               <!-- Form - Colores y radio button -->
@@ -85,16 +92,17 @@
                   type="radio"
                   name="picked-color"
                   id="picked-color"
-                  value="red"
+                  value="white"
+                  checked="checked"
                 />
-                <div class="radio-size radio-red-color"></div>
+                <div class="radio-size radio-white-color"></div>
                 <input
                   type="radio"
                   name="picked-color"
                   id="picked-color"
-                  value="blue"
+                  value="black"
                 />
-                <div class="radio-size radio-blue-color"></div>
+                <div class="radio-size radio-black-color"></div>
                 <input
                   type="radio"
                   name="picked-color"
@@ -120,50 +128,51 @@
 
               <!-- Form - Tamaño de fuente -->
               <div class="fuente-pick-container">
-                <label for="picked-color" id="label-picked-fuente"
+                <label for="picked-fuente" id="label-picked-fuente"
                   >Tamaño de fuente</label
                 >
                 <input
                   type="radio"
-                  name="picked-color"
-                  id="picked-color"
-                  value="red"
+                  name="picked-fuente"
+                  id="picked-fuente"
+                  value="15px"
+                  checked="checked"
+                />
+                <span>15px</span>
+                <input
+                  type="radio"
+                  name="picked-fuente"
+                  id="picked-fuente"
+                  value="20px"
                 />
                 <span>20px</span>
                 <input
                   type="radio"
-                  name="picked-color"
-                  id="picked-color"
-                  value="blue"
+                  name="picked-fuente"
+                  id="picked-fuente"
+                  value="24px"
+                />
+                <span>24px</span>
+                <input
+                  type="radio"
+                  name="picked-fuente"
+                  id="picked-fuente"
+                  value="28px"
                 />
                 <span>28px</span>
                 <input
                   type="radio"
-                  name="picked-color"
-                  id="picked-color"
-                  value="green"
+                  name="picked-fuente"
+                  id="picked-fuente"
+                  value="32px"
                 />
                 <span>32px</span>
-                <input
-                  type="radio"
-                  name="picked-color"
-                  id="picked-color"
-                  value="purple"
-                />
-                <span>48px</span>
-                <input
-                  type="radio"
-                  name="picked-color"
-                  id="picked-color"
-                  value="orange"
-                />
-                <span>60px</span>
               </div>
 
               <!-- Form - Monto -->
               <div class="monto-container-form">
                 <label for="monto" id="label-picked-monto">Monto $</label>
-                <input type="number" name="monto" id="monto" />
+                <input type="number" name="monto" id="monto" required pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==6) return false;"/>
               </div>
 
               <!-- Form - Ubicación -->
@@ -175,28 +184,29 @@
                   type="radio"
                   name="picked-ubicacion"
                   id="picked-ubicacion"
-                  value="radio-abajo-derecha"
+                  value="radio-centro"
+                  checked="checked"
                 />
-                <div class="ubicacion-size radio-abajo-derecha">
-                  <div class="radio-abajo-derecha-mini-box"></div>
+                <div class="ubicacion-size radio-centro">
+                  <div class="radio-centro-mini-box"></div>
                 </div>
                 <input
                   type="radio"
                   name="picked-ubicacion"
                   id="picked-ubicacion"
-                  value="radio-arriba-izquierda"
+                  value="radio-top"
                 />
-                <div class="ubicacion-size radio-arriba-izquierda">
-                  <div class="radio-arriba-izquierda-mini-box"></div>
+                <div class="ubicacion-size radio-top">
+                  <div class="radio-top-mini-box"></div>
                 </div>
                 <input
                   type="radio"
                   name="picked-ubicacion"
                   id="picked-ubicacion"
-                  value="radio-arriba-derecha"
+                  value="radio-bottom"
                 />
-                <div class="ubicacion-size radio-arriba-derecha">
-                  <div class="radio-arriba-derecha-mini-box"></div>
+                <div class="ubicacion-size radio-bottom">
+                  <div class="radio-bottom-mini-box"></div>
                 </div>
               </div>
 
@@ -208,6 +218,7 @@
                   name="picked-fondo"
                   id="picked-fondo"
                   value="primer-fondo"
+                  checked="checked"
                 />
                 <div class="fondo-size primer-fondo"></div>
                 <input

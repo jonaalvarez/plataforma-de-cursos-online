@@ -42,16 +42,45 @@ main {
   position: absolute;
   width: 350px;
   height: 350px;
-  background-color: #c9d6ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   top: 45px;
   border-radius: 4px;
   box-shadow: 7px 7px 0px -2px rgba(0, 0, 0, 0.2);
 }
 
+.container-default-color {
+  background-color: red;
+}
+
+/* Texto de la gift card*/
+.destinatario-text-default-color {
+  color: white;
+}
+
+/* JQuery options - gift card text color font*/
+.white-font {
+  color: white;
+}
+
+.black-font {
+  color: black;
+}
+
+.green-font {
+  color: rgb(173 255 179);
+}
+
+.purple-font {
+  color: #4949b3;
+}
+
+.orange-font {
+  color: rgb(226 147 0);
+}
+
+
+
+
+/* Subtítulo de la gift card*/
 #section-container-outer-h3 {
   position: absolute;
   top: 400px;
@@ -62,10 +91,12 @@ main {
 .full-form-container {
   width: 400px;
   height: 570px;
-  background-color: #c9d6ff;
+  /* background-color: #c9d6ff; */
+  border: 0.5px  white;
   position: relative;
   top: 45px;
-  box-shadow: 7px 7px 0px -2px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 7px 7px 0px -2px rgba(0, 0, 0, 0.2); */
+  margin-left: 10px;
 }
 
 /* Form - input destinatario */
@@ -98,27 +129,27 @@ main {
   top: -20px;
   left: -28px;
 }
-.radio-red-color {
+.radio-white-color {
   border-radius: 50%;
-  background-color: red;
+  background-color: white;
 }
-.radio-blue-color {
+.radio-black-color {
   border-radius: 50%;
-  background-color: blue;
+  background-color: black;
 }
 .radio-green-color {
   border-radius: 50%;
-  background-color: green;
+  background-color: rgb(173 255 179);
 }
 
 .radio-purple-color {
   border-radius: 50%;
-  background-color: #4747bd;
+  background-color: #4949b3;
 }
 
 .radio-orange-color {
   border-radius: 50%;
-  background-color: orange;
+  background-color: rgb(226 147 0);
 }
 
 #label-picked-color {
@@ -147,12 +178,42 @@ main {
   left: -28px;
 }
 
+.container-default-font-size {
+  font-size: 15px;
+}
+
 #label-picked-fuente {
   position: absolute;
   top: -42px;
   left: -10px;
   font-weight: bold;
 }
+
+#destinatario-text-container {
+  text-align: center;
+}
+
+/* JQuery options - tamaño de la fuente */
+.font-size-15px {
+  font-size: 15px;
+}
+
+.font-size-20px {
+  font-size: 20px;
+}
+
+.font-size-24px {
+  font-size: 24px;
+}
+
+.font-size-28px {
+  font-size: 28px;
+}
+
+.font-size-32px {
+  font-size: 32px;
+}
+
 
 /* Form- monto */
 .monto-container-form {
@@ -202,37 +263,66 @@ main {
 }
 
 /* Form - ubicacion box */
-.radio-abajo-derecha {
+.radio-centro {
   background-color: #4747bd;
 }
-.radio-abajo-derecha-mini-box {
+.radio-centro-mini-box {
+  height: 12px;
+  width: 20px;
+  background-color: black;
+  position: absolute;
+  bottom: 14px;
+  left: 10px;
+}
+
+.radio-top {
+  background-color: #4747bd;
+}
+.radio-top-mini-box {
+  height: 12px;
+  width: 20px;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.radio-bottom {
+  background-color: #4747bd;
+}
+.radio-bottom-mini-box {
   height: 12px;
   width: 20px;
   background-color: black;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 10px;
 }
 
-.radio-arriba-izquierda {
-  background-color: #4747bd;
-}
-.radio-arriba-izquierda-mini-box {
-  height: 12px;
-  width: 20px;
-  background-color: black;
+/* Form - ubicacion box - JQuery */
+
+.gift-card-container-radio-centro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.radio-arriba-derecha {
-  background-color: #4747bd;
+.gift-card-container-radio-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
-.radio-arriba-derecha-mini-box {
-  height: 12px;
-  width: 20px;
-  background-color: black;
-  position: absolute;
-  right: 0;
+
+.gift-card-container-radio-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
 }
+
+
 
 /* Form - Fondo */
 .fondo-container {
@@ -266,24 +356,25 @@ main {
 }
 
 .primer-fondo {
-  background-color: #4747bd;
+  background-color: red;
 }
 
 .segundo-fondo {
-  background-color: #4747bd;
+  background-color: blue;
 }
 
 .tercer-fondo {
-  background-color: #4747bd;
+  background-color: green;
 }
 
 .cuarto-fondo {
-  background-color: #4747bd;
+  background-color: #7d7def;
 }
 
 .quinto-fondo {
-  background-color: #4747bd;
+  background-color: orange;
 }
+
 
 /* Form - boton confirmar */
 #boton-confirmar {
