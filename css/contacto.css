@@ -56,10 +56,19 @@ section #contactoInputMail {
   border-radius: 2.5px;
 }
 
+section #contactoInputNumeroDeCelular {
+  margin-left: 150px;
+  width: 460px;
+  height: 25px;
+  position: relative;
+  border: 3px solid white;
+  border-radius: 2.5px;
+}
+
 section #contactoTextAreaDescripcion {
   margin-left: 150px;
   width: 460px;
-  height: 120px;
+  height: 71px;
   position: relative;
   border: 3px solid white;
   border-radius: 2.5px;
@@ -80,6 +89,22 @@ section button {
   border: 0;
   font-size: 18px;
   font-family: "montserrat";
+}
+
+#mensaje-error {
+  position: absolute;
+  color: red;
+  right: 90px;
+  top: 40px;
+}
+
+.borde-rojo-error {
+  border: 2.5px solid red !important;
+  margin-left: 150px;
+  width: 460px;
+  height: 25px;
+  position: relative;
+  border-radius: 2.5px;
 }
 
 /* Contacto datos section */

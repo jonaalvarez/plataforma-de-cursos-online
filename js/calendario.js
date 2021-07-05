@@ -6,13 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
       locale: 'es',
       events: [
             {
-                title: 'Vacuna 1',
-                start: '2020-06-17',
-                end:'2020-06-20'
+                title: 'Curso de React Intermedio',
+                start: '2021-07-07',
+                end:'2021-07-20'
             },
             {
-                title: 'Vacuna 2',
-                start: '2020-07-01'
+                title: 'Curso de Node',
+                start: '2021-07-23',
+                end: '2021-07-30'
             }
         ]
     }); 

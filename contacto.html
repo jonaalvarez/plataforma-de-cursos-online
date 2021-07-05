@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/contacto.js"></script>
   </head>
   <body>
     <header>
@@ -47,6 +49,7 @@
         <li><a href="./detalle-de-curso.html">Curso</a></li>
         <li><a href="./gift-card.html">Gift Cards</a></li>
         <li><a href="./subscribe-course.html">Inscripción</a></li>
+        <li><a href="./calendario.html">Calendario</a></li>
         <li><a href="./contacto.html">Contacto</a></li>
       </ul>
     </nav>
@@ -57,6 +60,7 @@
         <section class="section-contacto">
           <div class="contacto-form-container">
             <h2 id="tituloContacto">CONTACTO</h2>
+            <div id="mensaje-error"></div>
             <form action="">
               <br />
               <label
@@ -64,6 +68,7 @@
                   type="text"
                   placeholder="Nombre"
                   id="contactoInputNombre"
+                  required
               /></label>
               <br /><br />
               <label
@@ -71,6 +76,7 @@
                   type="text"
                   placeholder="Apellido"
                   id="contactoInputApellido"
+                  required
               /></label>
               <br /><br />
               <label
@@ -78,6 +84,15 @@
                   type="email"
                   placeholder="E-Mail"
                   id="contactoInputMail"
+                  required
+              /></label>
+              <br /><br />
+              <label
+                ><input
+                  type="number"
+                  placeholder="Número de celular"
+                  id="contactoInputNumeroDeCelular"
+                  required
               /></label>
               <br /><br />
               <label>
@@ -86,10 +101,12 @@
                   id="contactoTextAreaDescripcion"
                   cols="30"
                   rows="10"
+                  maxlength="1000"
+                  required
                 ></textarea>
               </label>
               <br />
-              <button>Enviar</button>
+              <button id="btn-send-form">Enviar</button>
             </form>
           </div>
         </section>
@@ -105,7 +122,20 @@
           </div>
         </section>
         <section class="section-mapa">
-          <div><h2>Google Maps</h2></div>
+          <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                var setting = {"height":270,"width":990,"zoom":19,"queryString":"Avenida de Mayo 675, Ramos Mejía, Buenos Aires Province, Argentina","place_id":"EkNBdmVuaWRhIGRlIE1heW8gNjc1LCBSYW1vcyBNZWrDrWEsIEJ1ZW5vcyBBaXJlcyBQcm92aW5jZSwgQXJnZW50aW5hIlESTwo0CjIJF40UOObHvJURVjlPxuzl-ewaHgsQ7sHuoQEaFAoSCbPp_B_ox7yVEXZWMgOkjIzmDBCjBSoUChIJjdqNfNvHvJUR4svWasS-zkc","satellite":false,"centerCoord":[-34.64684446097426,-58.56454754999999],"cid":"0x55c9168b8e31cddc","lang":"en","cityUrl":"/argentina/buenos-aires","cityAnchorText":"Map of Buenos Aires, Buenos Aires, Argentina","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"540748"};
+                var d = document;
+                var s = d.createElement('script');
+                s.src = 'https://1map.com/js/script-for-user.js?embed_id=540748';
+                s.async = true;
+                s.onload = function (e) {
+                  window.OneMap.initMap(setting)
+                };
+                var to = d.getElementsByTagName('script')[0];
+                to.parentNode.insertBefore(s, to);
+              })();</script><a href="https://1map.com/map-embed">1 Map</a>
+          </div>
         </section>
       </div>
     </main>

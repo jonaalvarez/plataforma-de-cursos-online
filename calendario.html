@@ -1,18 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coursite - Calendario</title>
-    <link href='fullcalendar/core/main.css' rel='stylesheet' />
-    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
-    <script src='fullcalendar/core/main.js'></script>
-    <script src='fullcalendar/daygrid/main.js'></script>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link href="fullcalendar/core/main.css" rel="stylesheet" />
+    <link href="fullcalendar/daygrid/main.css" rel="stylesheet" />
+    <script src="fullcalendar/core/main.js"></script>
+    <script src="fullcalendar/daygrid/main.js"></script>
+    <link rel="stylesheet" href="./css/calendario-estilos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/calendario.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Coursite</p>
+      </div>
+      <form class="searchBar">
+        <input
+          list="listSearchBar"
+          id="inputSearch"
+          name="searchbar"
+          placeholder="Buscar.."
+        />
+        <datalist id="listSearchBar" class="dataList">
+          <option value="Java"></option>
+        </datalist>
+        <button type="submit" class="iconSearch">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <!-- Cart -->
+      <div class="cart">
+        <span>
+          <i data-count="3" class="fa fa-shopping-cart badge"></i>
+        </span>
+      </div>
+    </header>
+    <!-- Nav Header -->
+    <nav class="nav-container">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./detalle-de-curso.html">Curso</a></li>
+        <li><a href="./gift-card.html">Gift Cards</a></li>
+        <li><a href="./subscribe-course.html">Inscripción</a></li>
+        <li><a href="./calendario.html">Calendario</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
     <main>
+      <div class="section-container">
         <article id="calendario"></article>
+      </div>
     </main>
-</body>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-datos">
+        <h4>Álvarez, Brítez, Oubel</h4>
+      </div>
+      <div class="footer-menu">
+        <h4>Menú inferior</h4>
+      </div>
+      <div class="footer-redes">
+        <h4><i class="fa fa-instagram" style="color: white"></i> Coursite</h4>
+      </div>
+    </footer>
+  </body>
 </html>
