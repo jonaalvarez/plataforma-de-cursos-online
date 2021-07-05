@@ -1,21 +1,49 @@
 $(document).ready(function(){
     let counter = 0;
+
+    $("#subscribe-user")
+    .append(
+    `<div id=${"element-form-" + 0} class="element-form">
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Apellido">
+        <input type="text" placeholder="DNI">
+        <span id=${0} class="btn-borrar"><i class="fas fa-minus-circle"></i></span>
+      </div>`)
+
+      $('.price-subscribe').text("1000.-")
+
+
     $(".btn").click(function(e){
         e.preventDefault();
         counter++;
-        if(counter < 9){
-            $(".element-form-container").append(`<div id=${counter} class="element-form">
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Apellido">
-            <input type="text" placeholder="DNI">
-            <span class="btn-borrar"><i class="fas fa-minus-circle"></i></span>
-            </div>`);
+        if(counter < 5){
+            $("#subscribe-user")
+            .append(
+            `<div id=${"element-form-" + counter} class="element-form">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="text" placeholder="DNI">
+                <span id=${counter} class="btn-borrar"><i class="fas fa-minus-circle"></i></span>
+              </div>`)
+
+              $('.price-subscribe').text(counter+1 + "000.-")
         }
     })
 
-    $("#0").click(function(e){
-        console.log(e);
+    function borrarElemento(id){
+        if(counter >= 1 ){
+            $("#element-form-" + id).remove();
+            counter--;
+            let contador = counter;
+            $('.price-subscribe').text(contador+1 + "000.-")
+        }
+
+    }
+
+    $('#subscribe-user').on('click', '.btn-borrar', function(e) {
+        var id = $(this).attr('id');
+        borrarElemento(id)
     })
 
-     
+
 })
