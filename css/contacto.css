@@ -78,9 +78,9 @@ section button {
   border-radius: 30px;
   background: #4747bd;
   color: white;
-  position: relative;
+  position: absolute;
   left: 535px;
-  bottom: -10px;
+  bottom: -25px;
   cursor: pointer;
   padding: 8px 16px;
   line-height: 1;
@@ -106,6 +106,15 @@ section button {
   position: relative;
   border-radius: 2.5px;
 }
+
+#counter-caracteres {
+  position: absolute;
+  right: -12px;
+  top: 350px;
+  font-weight: bold;
+  width: fit-content;
+}
+
 
 /* Contacto datos section */
 

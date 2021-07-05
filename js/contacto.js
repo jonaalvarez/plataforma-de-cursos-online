@@ -1,8 +1,19 @@
 $(document).ready(function () {
+    let caracterCounterTope = 1000; 
+
   $("#btn-send-form").click(function (e) {
     e.preventDefault();
     validar();
   });
+
+  $("#contactoTextAreaDescripcion").keyup(function(e){
+    let caracteresLength = e.target.value.length;
+    let cuenta = caracterCounterTope - caracteresLength;
+    if(cuenta >= 0) {
+        $("#counter-caracteres-text").empty();
+        $("#counter-caracteres-text").append(`<p id="caracteres-restantes-nuevo">Caracteres Restantes: ${cuenta} - Ingresados: ${caracteresLength}</p>`);
+    }
+  })
 });
 
 function isEmail(email) {
@@ -15,11 +26,10 @@ function isPhoneNumber(number) {
   return regex.test(number);
 }
 
-
-
 function validar() {
   let error = false;
   let mensajesError = "";
+  //Input nombre
   if ($("#contactoInputNombre").val() === "") {
     error = true;
     mensajesError += "El campo nombre es obligatorio";
@@ -32,6 +42,7 @@ function validar() {
     error = false;
   }
 
+  //Input apellido
   if ($("#contactoInputApellido").val() === "") {
     error = true;
     mensajesError += "El campo apellido es obligatorio";
@@ -44,6 +55,7 @@ function validar() {
     error = false;
   }
 
+  //Input Mail
   if (isEmail($("#contactoInputMail").val()) === false) {
     error = true;
     mensajesError += "Ingrese un mail válido";
@@ -56,6 +68,7 @@ function validar() {
     error = false;
   }
 
+  //Input Numero de celular
   if (isPhoneNumber($("#contactoInputNumeroDeCelular").val()) === false) {
     error = true;
     mensajesError += "El campo celular es inválido";
@@ -68,6 +81,7 @@ function validar() {
     error = false;
   }
 
+  //Input text area
   if ($("#contactoTextAreaDescripcion").val() === "") {
     error = true;
     mensajesError += "El campo de texto es obligatorio";
