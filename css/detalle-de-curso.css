@@ -143,6 +143,12 @@ header {
   border: 0;
   font-size: 18px;
   font-family: "montserrat";
+  text-decoration: none;
+}
+
+#subscribe-btn {
+  text-decoration: none;
+  color: white;
 }
 
 /* Contenidos por clase section */

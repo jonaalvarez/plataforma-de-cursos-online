@@ -21,7 +21,7 @@ header {
   font-size: 25px;
 }
 
-.logo{
+.logo {
   background-color: #d88e32;
   width: fit-content;
   display: flex;
@@ -458,24 +458,22 @@ button:hover {
 }
 
 .subscribe-main {
-  max-height: calc(100vh - 20vh);
+  /*max-height: calc(100vh - 20vh);*/
+  height: 700px;
 }
 
-
-
-
-.carousel{
-  width:90%;
-  margin:0px auto;
+.carousel {
+  width: 90%;
+  margin: 0px auto;
 }
-.slick-slide{
-  margin:10px;
+.slick-slide {
+  margin: 10px;
 }
-.slick-slide img{
+.slick-slide img {
   width: 100%;
   border: 1px solid #fff;
 }
 .wrapper .slick-dots li button:before {
-  font-size:20px;
-  color:white;
+  font-size: 20px;
+  color: white;
 }

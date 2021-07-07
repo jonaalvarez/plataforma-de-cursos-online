@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <link rel="stylesheet" href="css/subscribe-course.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/subscribe-course-script.js"></script>
@@ -56,8 +57,8 @@
     </nav>
     <main class="subscribe-main">
       <div class="titulo-subscribe">
-        <h1>TITULO CURSO</h1>
-        <h5>INSCRIPCION</h5>
+        <h1>React intermedio</h1>
+        <h5>Inscripción</h5>
       </div>
       <form action="" class="formulario-subcribe">
         <div id="subscribe-user" class="element-form-container">
@@ -71,20 +72,26 @@
 
         <div class="label-subscribe">
           <span class="price-subscribe"></span>
-          <button class="btn-subscribe">INSCRIBIRSE</i></button>
+          <button class="btn-subscribe" id="btn-subscribe">INSCRIBIRSE</i></button>
         </div>
-      </form>      
+      </form>   
+      <div id="modal-inscribirse">
+        <i class="fas fa-times" id="cruz-cerrar"></i>
+        <h2 id="monto-modal">Monto a pagar:</h2>
+      </div>   
     </main>
     <footer>
       <div class="footer-datos">
-        <h4>Álvarez, Brítez, Oubel</h4>
+        <h4>Franco Oubel</h4>
+        <h4>Martín Brítez</h4>
       </div>
       <div class="footer-menu">
-        <h4>Menú inferior</h4>
+        <h4>© 2021 Coursite, Inc</h4>
+        <h4>Todos los derechos reservados.</h4>
       </div>
       <div class="footer-redes">
-        <h4><i class="fab fa-instagram"></i> Coursite</h4>
+        <h4><i class="fab fa-instagram"></i><a href="https://www.facebook.com/">Coursite_oficial</a></h4>
+        <h4><i class="fab fa-facebook"></i><a href="https://www.instagram.com/">Coursite</a></h4>
       </div>
     </footer>
-  </body>
 </html>

@@ -13,10 +13,24 @@ footer {
 }
 
 footer div {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(238, 234, 234, 0.986);
   margin: 20px;
-  padding: 70px;
-  width: calc(25% - 70px);
+  height: 160px;
+  width: 350px;
   text-align: center;
+}
+
+footer a {
+  margin-left: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: auto;
+  cursor: pointer;
 }

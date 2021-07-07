@@ -80,7 +80,7 @@ section button {
   color: white;
   position: absolute;
   left: 535px;
-  bottom: -25px;
+  bottom: -42px;
   cursor: pointer;
   padding: 8px 16px;
   line-height: 1;
@@ -114,7 +114,6 @@ section button {
   font-weight: bold;
   width: fit-content;
 }
-
 
 /* Contacto datos section */
 
