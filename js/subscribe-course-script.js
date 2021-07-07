@@ -11,7 +11,7 @@ $(document).ready(function () {
       </div>`
   );
 
-  $(".price-subscribe").text("1000.-");
+  $(".price-subscribe").text("10000.-");
 
   $(".btn").click(function (e) {
     e.preventDefault();
@@ -26,7 +26,7 @@ $(document).ready(function () {
               </div>`
       );
 
-      $(".price-subscribe").text(counter + 1 + "000.-");
+      $(".price-subscribe").text(counter + 1 + "0000.-");
     }
   });
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
       $("#element-form-" + id).remove();
       counter--;
       let contador = counter;
-      $(".price-subscribe").text(contador + 1 + "000.-");
+      $(".price-subscribe").text(contador + 1 + "0000.-");
     }
   }
 
@@ -47,7 +47,8 @@ $(document).ready(function () {
   $("#btn-subscribe").click(function (e) {
     e.preventDefault();
     $("#modal-inscribirse").fadeIn();
-    $("#monto-modal").text("Monto a pagar: $" + (counter + 1) + "000");
+    $("#monto-modal").text("Monto a pagar: $" + (counter + 1) + "0000");
+    $("#cantidad-personas-modal").text("Personas inscriptas: " + (counter + 1));
   });
 
   $("#modal-inscribirse").click(function () {
